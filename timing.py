@@ -40,7 +40,7 @@ while ctr<=int(i):
     #timeStemp = raw_input('Enter the start time of this chapter HHMMSS ')
     #timeStemp = timeStemp[0:2] + ':' + timeStemp[2:4] + ':' + timeStemp[4:6]
     #startTime=timeStemp
-    arr = r.readline().split("-")
+    arr = r.readline().rsplit("-",1)
     timeStemp = ChapterTimeStart+startTime + '.000000000'+ChapterTimeStart2+'\n'
     f.write(timeStemp)
 
